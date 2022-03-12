@@ -2,15 +2,18 @@
 
 # HADDOCK bash script
 
+# update path here:
+BASE_PATH=path
+
 echo "run from main folder to setup run1 folder"
 
 # need to setup cns (in tcsh) first
 #tcsh
-#source /<path>/cns_solve_1.3/cns_solve_env
+# source /$BASE_PATH/cns_solve_1.3/cns_solve_env
 #exit
 
 # now can setup haddock
-source /<path>/haddock2.2/haddock_configure.sh-mac
+source /$BASE_PATH/haddock2.2/haddock_configure.sh-mac
 
 # remove and regenerate run1 folder, if already exists
 rm -r run1
